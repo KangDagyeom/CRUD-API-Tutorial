@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const Product = require('./models/products.model.js')
 const app = express()
 
-app.use(express.json);
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("Hello from node API updated");
